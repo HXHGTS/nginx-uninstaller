@@ -3,5 +3,5 @@ nginx卸载脚本
 
 运行:
 ```
-curl -sSL https://raw.githubusercontent.com/HXHGTS/nginx-uninstaller/main/uninstall.sh | bash
+curl -sSL https://hxhgts.github.io/nginx-uninstaller/uninstall.sh | bash
 ```
