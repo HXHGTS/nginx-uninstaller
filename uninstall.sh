@@ -22,6 +22,10 @@ apt-get --purge remove nginx-core -y
 
 dpkg --get-selections | grep nginx
 
+rm -rf /etc/nginx
+
+rm -rf /usr/share/nginx
+
 echo -----nginx进程检测-----
 
 which nginx
