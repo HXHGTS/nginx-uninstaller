@@ -12,6 +12,8 @@ rm -rf /etc/nginx
 
 rm -rf /usr/share/nginx
 
+rm -rf /var/www/html
+
 apt-get --purge remove nginx -y
 
 apt-get autoremove -y
