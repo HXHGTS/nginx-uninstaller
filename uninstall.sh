@@ -8,6 +8,10 @@ systemctl disable nginx
 
 echo 正在卸载nginx. . .
 
+rm -rf /etc/nginx
+
+rm -rf /usr/share/nginx
+
 apt-get --purge remove nginx -y
 
 apt-get autoremove -y
@@ -21,10 +25,6 @@ apt-get --purge remove nginx-common -y
 apt-get --purge remove nginx-core -y
 
 dpkg --get-selections | grep nginx
-
-rm -rf /etc/nginx
-
-rm -rf /usr/share/nginx
 
 echo -----nginx进程检测-----
 
